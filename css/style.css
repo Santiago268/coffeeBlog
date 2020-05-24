@@ -14,6 +14,7 @@ body{
 /* Globales */
 .contenedor{
     max-width: 1200px;
+    width: 95%;
     margin: 0 auto;
 }
 
@@ -27,6 +28,7 @@ h1{
 
 h2{
     font-size: 4rem;
+    line-height: 1.3;
 }
 
 h3{
@@ -114,4 +116,63 @@ img{
     .navegacion a:last-of-type{
         margin: 0;
     }
+}
+
+/* Blog */
+.contenido-principal{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse; 
+}
+.blog,
+.cursos{
+    flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+    .contenido-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .blog{
+        flex-basis: 66.7%;
+    }
+    .cursos{
+        flex-basis: calc(33.3% - 4rem);
+    }
+}
+
+/* Opcional */
+.entrada-blog{
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.entrada-blog:last-of-type{
+    border: none;
+}
+
+/* Cursos Lista */
+.cursos-lista{
+    padding: 0;
+    list-style: none;
+}
+
+.curso{
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.curso:last-of-type{
+    border: none;
+}
+
+.curso p{
+    font-family: 'PT Sans', sans-serif; 
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.curso p span {
+    font-weight: 400;
 }
