@@ -29,26 +29,31 @@
         </div><!--Contenedor-->
     </header>
     <main class="contenedor">
-        <h2 class="centrar-texto">Sobre Nosotros</h2>
-        <div class="grid">
-            <div class="columnas-6">
-                <img src="img/nosotros.jpg" alt="Imagen Nosotros">
+        <h2 class="centrar-texto">Contacto</h2>
+        <div class="grid centrar-columnas">
+            <div class="columnas-12">
+                <img src="img/contacto.jpg" alt="Imagen de Contacto">
             </div>
-            <div class="columnas-6">
-                <p>
-                    Cras ut tempus mi. Etiam dolor neque, viverra vel egestas quis, fermentum vel augue. Class aptent taciti sociosqu ad litora
-                    torquent per conubia nostra, per inceptos himenaeos. Curabitur ut rhoncus lacus. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Nunc sollicitudin convallis elit sit amet rutrum. Etiam varius felis pulvinar, finibus augue non, euismod nisl. Donec tristique
-                    mi vitae lacinia hendrerit. Vivamus non blandit sapien, eu feugiat orci. Suspendisse et nibh imperdiet, dapibus turpis nec, tincidunt elit.
-                    Cras sed euismod ex. Ut euismod turpis a tellus commodo, eu viverra turpis dictum. Donec magna augue, lobortis eu quam id, pretium condimentum
-                    velit. Mauris vel velit quis nulla finibus consectetur. Curabitur bibendum nibh vitae risus rutrum, vitae sollicitudin libero porta.    
-                </p>
-                <p>
-                    In velit arcu, ullamcorper sed tellus id, euismod pellentesque turpis. In convallis ex sem, eu lobortis odio vulputate a. In sed tellus fermentum,
-                    congue purus eget, consectetur leo. Aliquam tristique justo at nulla rhoncus tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                    Suspendisse ut eros vestibulum, molestie ex id, eleifend nisi. Etiam maximus, ligula vel suscipit interdum, dui purus faucibus sem, quis efficitur libero
-                    lorem quis tortor.
-                </p>
+            <div class="columnas-10 formulario-contacto">
+                <form action="#">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Tu Nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Tu E-mail">
+                    </div>
+                    <div class="campo-mensaje">
+                        <div class="campo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="campo enviar">
+                        <input type="submit" value="Enviar" class="boton boton-primario">
+                    </div>
+                </form>
             </div>
         </div>
     </main>
